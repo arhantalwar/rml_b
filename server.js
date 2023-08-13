@@ -7,11 +7,11 @@ const { getVMdata } = require('./database.js')
 
 
 const connection = mysql.createConnection({
-    host: 'containers-us-west-48.railway.app',
+    host: 'containers-us-west-205.railway.app',
     user: 'root',
-    password: 'yRnj9VFzP4FZQNwhKogj',
+    password: 'QevFmGHPe7pyh4nrE8a9',
     database: 'railway',
-    port: 6921
+    port: 6786
 });
 
 const app = express();
@@ -125,8 +125,9 @@ app.post('/api/login', (req, res) => {
 
 // FOR FETCHING VM DATA AND SENDING...
 
-app.get("/getVMdata", (req, res) => {
+app.get("/api/getVMdata", (req, res) => {
     res.setHeader('Content-Type', 'application/json');
+
     getVMdata((error, jsonData) => {
         if (error) {
             res.status(500).send('Error fetching data from database');

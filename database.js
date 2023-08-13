@@ -1,11 +1,11 @@
 const mysql = require('mysql2')
 
 const pool = mysql.createPool({
-    host: 'containers-us-west-48.railway.app',
+    host: 'containers-us-west-205.railway.app',
     user: 'root',
-    password: 'yRnj9VFzP4FZQNwhKogj',
+    password: 'QevFmGHPe7pyh4nrE8a9',
     database: 'railway',
-    port: 6921
+    port: 6786
 })
 
 function getVMdata(callback) {

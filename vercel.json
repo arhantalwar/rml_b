@@ -1,9 +1,7 @@
 {
   "name": "RML_B",
   "version": "1.0.0",
-  "build": {
-    "target": "serverless"
-  },
+  "build": {},
   "routes": {
     "/*": "server.js"
   }

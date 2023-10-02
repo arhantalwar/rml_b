@@ -1,0 +1,11 @@
+{
+  "name": "RML_B",
+  "version": "1.0.0",
+  "build": {
+    "target": "serverless"
+  },
+  "routes": {
+    "/*": "server.js"
+  }
+}
+

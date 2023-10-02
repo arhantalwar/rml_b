@@ -6,11 +6,11 @@ const session = require('express-session')
 const { getVMdata } = require('./database.js')
 
 const connection = mysql.createConnection({
-    host: 'containers-us-west-42.railway.app',
+    host: 'containers-us-west-141.railway.app',
     user: 'root',
-    password: 'F5noBMBK4R0YJtP6f8sb',
+    password: '5x4c36wpxWPLq1V44r7D',
     database: 'railway',
-    port: 7520
+    port: 6584
 });
 
 const app = express();

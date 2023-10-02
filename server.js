@@ -22,7 +22,8 @@ app.use(session({
 }))
 
 let a_email;
-app.use(cors({ origin: 'https://rmlf-production.up.railway.app/' }));
+app.use(cors());
+//app.use(cors({ origin: 'https://rmlf-production.up.railway.app/' }));
 app.use(bodyParser.json());
 
 app.get("/", (req, res) => {

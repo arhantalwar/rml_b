@@ -5,13 +5,12 @@ const bodyParser = require('body-parser')
 const session = require('express-session')
 const { getVMdata } = require('./database.js')
 
-
 const connection = mysql.createConnection({
-    host: 'containers-us-west-205.railway.app',
+    host: 'containers-us-west-42.railway.app',
     user: 'root',
-    password: 'QevFmGHPe7pyh4nrE8a9',
+    password: 'F5noBMBK4R0YJtP6f8sb',
     database: 'railway',
-    port: 6786
+    port: 7520
 });
 
 const app = express();

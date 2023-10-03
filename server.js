@@ -6,11 +6,11 @@ const session = require('express-session')
 const { getVMdata } = require('./database.js')
 
 const connection = mysql.createConnection({
-    host: 'containers-us-west-141.railway.app',
+    host: 'containers-us-west-74.railway.app',
     user: 'root',
-    password: '5x4c36wpxWPLq1V44r7D',
+    password: 'FSgzsEYNUW1plGW4FHoh',
     database: 'railway',
-    port: 6584
+    port: 6925
 });
 
 const app = express();
@@ -40,6 +40,7 @@ app.post('/api/addUser', (req, res) => {
   connection.query(query, values, (error, result) => {
     if (error) {
       console.error(error);
+      console.log(values);
       res.status(500).send('Error adding user to database');
     } else {
       console.log('User added to database successfully!');
